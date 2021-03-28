@@ -1,0 +1,263 @@
+* {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+  -moz-transition-property: all;
+  -moz-transition-timing-function: cubic-bezier(100, 50, 21, 6);
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+  background-image: url("https://i.pinimg.com/236x/5d/20/3c/5d203c8eb41b3757d837fe8de4bdc8a9.jpg");
+  background-repeat: repeat;
+  background-color: #cccccc;
+  scroll-behavior: smooth;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px; 
+  font-family: "Oswald", "calibri", "Trebuchet MS";
+  font-weight: 300;
+}
+
+h1,h2,h4{
+  font-variant: small-caps;
+  text-align: center;
+}
+
+h1 {
+  font-size: 10ch;
+}
+h2 {
+  font-size: 3.5ch;
+}
+.text_information{
+  justify-content: space-around;
+  align-items: baseline;
+  text-align: center;
+  flex-direction: row;
+}
+
+#QnA{
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  align-self: left;
+  justify-content: space-around;
+  text-align: left;
+}
+
+#answers{
+  align-self: center;
+  text-align: center;
+  align-items: start;
+}
+
+.navbar {
+  margin: 10px auto 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-radius: 8px;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+  padding: 3;
+  margin: 0;
+}
+
+.navbar a {
+  color: #999;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  border: none;
+  /* background: rgba(0, 0, 0, 0.4); */
+  background: #fff;
+  padding: 20px 20px;
+  color: #1b1b1b;
+}
+
+/* Add a color to the active/current link */
+.navbar a:active {
+  background-color: rgb(206, 230, 238);
+  color: gold;
+  cursor: pointer;
+}
+
+
+.slideshow-container {
+  max-width: 800px;
+  max-height: 800px;
+  position: inherit;
+  margin: auto;
+}
+.mySlides {
+  display: none;
+  height: 250px;
+}
+.mySlides img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: contain;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  cursor: pointer;
+  position: unset;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  margin-right: 90px;
+  margin-left: 90px;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.contactMeForm {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-variant: normal;
+  text-align: left;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: lightgrey;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+label {
+  align-content: flex-end;
+}
+
+.formGroup {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  margin-top: 5px;
+  font-size: 18px;
+  border: 1px solid #1b1b1b;
+  margin-top: 5px;
+}
+
+textarea,
+input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: transparent;
+}
+textarea:hover,
+input:hover {
+  background-color: whitesmoke;
+}
+textarea:active,
+input:active {
+  background-color: rgb(206, 230, 238);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  margin: 10px auto 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #333;
+  color: #999;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  border-radius: 8px;
+  display: block;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  align-items: center;
+  padding: 3;
+  margin: 0;
+}
+button:hover {
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  background: #fff;
+  padding: 20px 20px;
+  color: ivory;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+button:active {
+  background-color: rgb(206, 230, 238);
+  color: gold;
+  cursor: pointer;
+}
